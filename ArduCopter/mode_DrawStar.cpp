@@ -8,9 +8,10 @@
 // init - initialise guided controller
 bool ModeDrawStar::init(bool ignore_checks) 
 { 
-    wp_control_start();
+    
     path_num = 0;
     generate_path();
+    wp_control_start();
     return true;
 }
 
